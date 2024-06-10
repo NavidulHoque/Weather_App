@@ -43,7 +43,6 @@ function App() {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c927de3e36cf303715dda4806793ab3a&units=metric`
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data)
     setweatherInformation(data)
 
     setStorage([e, city])
