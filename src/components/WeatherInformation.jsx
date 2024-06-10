@@ -14,7 +14,6 @@ const WeatherInformation = ({ weatherInformation }) => {
     function convertingAMPM(seconds){
 
         const date = new Date((seconds) * 1000)
-        console.log(date)
         let hours = date.getHours() //in 24 hours format
         const minutes = date.getMinutes()
 
